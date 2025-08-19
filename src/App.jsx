@@ -143,7 +143,12 @@ useEffect(() => {
       {expenseList.length <= 0 ? (
         <div className="transactionSection">
             <h1>Recent Transactions</h1>
-            <div className="paginationWrapper" style={{justifyContent: "flex-start", backgroundColor: "rgba(255, 255, 255, 1)"}}>
+            <div className="paginationWrapper" 
+                  style={{
+                    justifyContent: "flex-start", 
+                    backgroundColor: "rgba(255, 255, 255, 1)",
+                    borderRadius: "10px"
+                    }}>
                 <p style={{
                   fontFamily: "ubuntu",
                   fontSize: "1rem"
