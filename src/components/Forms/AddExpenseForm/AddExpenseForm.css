@@ -1,0 +1,54 @@
+.form-Wrapper h3 {
+    font-family: ubuntu;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.form-Wrapper form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.form-Wrapper form input, .form-Wrapper form select {
+    background: #FBFBFB;
+    border: none;
+    outline: none;
+    color: #333;
+    font-family: ubuntu;
+    font-size: 1rem;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    padding: 12px;
+    flex: 1;
+    min-width: 0;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.form-Wrapper button {
+    background: #f2bb4b;
+    border-radius: 15px;
+    padding: 12px;
+    border: none;
+    outline: none;
+    font-family: "open sans";
+    font-weight: 700;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+}
+
+.form-Wrapper .cancelButton {
+    background: #e2e2e2;
+    border-radius: 15px;
+    padding: 12px;
+    border: none;
+    outline: none;
+    font-family: "open sans";
+    font-weight: 400;
+    font-size: 1rem;
+    color: black;
+    cursor: pointer;
+}

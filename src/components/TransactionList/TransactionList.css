@@ -1,0 +1,41 @@
+.transactionListWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.transactionItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.deleteIcon {
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    background-color: rgba(255, 62, 62, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.editIcon {
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    background-color: rgba(244, 187, 74, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    cursor: pointer;
+}

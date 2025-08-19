@@ -1,0 +1,34 @@
+.paginationWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+h1 {
+    font-family: "ubuntu";
+    font-weight: 700;
+    font-style: italic;
+    font-size: 2rem;
+}
+
+.paginationWrapper button {
+    border-radius: 15px;
+    width: 37px;
+    height: 37px;
+    background: linear-gradient(90deg, rgba(241, 241, 241, 1), rgba(241, 241, 241, 1), rgba(241, 241, 241, 1), rgba(241, 241, 241, 1));
+    border: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.paginationWrapper .currentPage {
+    font-family: "ubuntu";
+    font-weight: 400;
+    font-size: 24px;
+    background: rgba(67, 150, 123, 1);
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+}
