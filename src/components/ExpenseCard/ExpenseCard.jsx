@@ -5,7 +5,7 @@ function ExpenseCard ({ expenses, openExpenseForm }) {
     return (
         <div className="expenseCard">
             <h3>Expenses: <span>₹{expenses}</span> </h3>
-            <button onClick={openExpenseForm}>+Add Expense</button>
+            <button type="button" onClick={openExpenseForm}>+ Add Expense</button>
         </div>
     );
 }

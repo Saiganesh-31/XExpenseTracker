@@ -46,7 +46,7 @@ function AddExpenseForm ({ closeExpenseForm, onSubmitExpenseForm, defaultExpense
                 />
                 <input 
                     type="number"
-                    name="amount"
+                    name="price"
                     placeholder="Price"
                     value={formData.amount}
                     onChange={handleChange}
