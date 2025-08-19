@@ -147,7 +147,8 @@ useEffect(() => {
                   style={{
                     justifyContent: "flex-start", 
                     backgroundColor: "rgba(255, 255, 255, 1)",
-                    borderRadius: "10px"
+                    borderRadius: "10px",
+                    padding: "1opx"
                     }}>
                 <p style={{
                   fontFamily: "ubuntu",
