@@ -7,7 +7,7 @@ body {
   font-family: "ubuntu", sans-serif;
 }
 
-div h2 {
+div h1, h2 {
   color: white;
 }
 
@@ -44,6 +44,15 @@ div h2 {
 
 .chartSection {
   width: 40%;
+}
+
+.chartSection h2 {
+  color: white;
+  margin-bottom: 20px;
+  font-family: "ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 28px;
 }
 
 @media(max-width: 768px) {

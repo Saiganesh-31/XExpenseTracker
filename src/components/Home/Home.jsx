@@ -180,13 +180,7 @@ useEffect(() => {
         </div>
       )}
       <div className="chartSection">
-        <h2 style={{
-          fontFamily: "ubuntu",
-          color: "white",
-          fontSize: "28px",
-          fontWeight: "700",
-          fontStyle: "italic"
-        }}>Top Expenses</h2>
+        <h2>Top Expenses</h2>
         <div style={{
           backgroundColor: "rgba(255, 255, 255, 1)",
           borderRadius: "10px",
