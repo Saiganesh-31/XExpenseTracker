@@ -7,7 +7,7 @@ body {
   font-family: "ubuntu", sans-serif;
 }
 
-div h1 {
+div h2 {
   color: white;
 }
 
@@ -31,6 +31,15 @@ div h1 {
 
 .transactionSection {
   width: 60%;
+}
+
+.transactionSection h2{
+    color: white;
+    margin-bottom: 20px;
+    font-family: "ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 28px;
 }
 
 .chartSection {

@@ -142,7 +142,7 @@ useEffect(() => {
       <div className="dashBoardLayout">
       {expenseList.length <= 0 ? (
         <div className="transactionSection">
-            <h1>Recent Transactions</h1>
+            <h2>Recent Transactions</h2>
             <div className="paginationWrapper" 
                   style={{
                     justifyContent: "flex-start", 
@@ -158,7 +158,7 @@ useEffect(() => {
         </div>  
       ) : (
         <div className="transactionSection">
-          <h1>Recent Transactions</h1>
+          <h2>Recent Transactions</h2>
           <div style={{
             background: "#ffffff",
             borderRadius: "10px",
@@ -183,7 +183,7 @@ useEffect(() => {
         <h2 style={{
           fontFamily: "ubuntu",
           color: "white",
-          fontSize: "2rem",
+          fontSize: "28px",
           fontWeight: "700",
           fontStyle: "italic"
         }}>Top Expenses</h2>
