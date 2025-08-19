@@ -50,7 +50,7 @@ function TransactionList ({ expenseList, pageNum, itemsPerPage, onEditExpense, o
                         <p style={{margin: "0", fontWeight: "bold"}}>{item.title}</p>
                         <p style={{margin: 0, color: "rgba(155, 155, 155, 1)"}}>{item.date}</p>
                     </div>
-                    <p style={{marginRight: "10px", color: "rgba(244, 187, 74, 1)"}}>₹{item.amount}</p>
+                    <p style={{marginRight: "10px", color: "rgba(244, 187, 74, 1)"}}>₹{item.price}</p>
                     <div className="deleteIcon"
                         onClick={() => onDeleteExpense(StartIndex + index)}
                     >

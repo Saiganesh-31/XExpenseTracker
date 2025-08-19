@@ -54,31 +54,31 @@ const handleCloseExpenseForm = () => {
   setIsOpenExpenseForm(false);
 }
 
-const handleAddBalance = (amount) => {
-  setBalance(prev => prev + Number(amount));
+const handleAddBalance = (price) => {
+  setBalance(prev => prev + Number(price));
 }
 
 const handleAddExpense = (newExpense) => {
   if(editIndex != null){
     const oldExpense = expenseList[editIndex];
 
-    const amountDiff = Number(newExpense.amount) - Number(oldExpense.amount);
+    const priceDiff = Number(newExpense.price) - Number(oldExpense.price);
 
     const updatedList = [...expenseList];
     updatedList[editIndex] = newExpense;
 
     setExpenseList(updatedList);
-    setExpenses(prev => prev + amountDiff);
-    setBalance(prev => prev - amountDiff);
+    setExpenses(prev => prev + priceDiff);
+    setBalance(prev => prev - priceDiff);
 
     setEditIndex(null);
   }
   else{
     setExpenseList((prev) => [...prev, newExpense]);
 
-    setExpenses((prev) => prev + Number(newExpense.amount));
+    setExpenses((prev) => prev + Number(newExpense.price));
 
-    setBalance((prev) => prev - Number(newExpense.amount));
+    setBalance((prev) => prev - Number(newExpense.price));
   }
   setIsOpenExpenseForm(false);
 }
@@ -91,9 +91,9 @@ const onEditExpense = (index) => {
 const onDeleteExpense = (index) => {
   const expenseToDelete = expenseList[index];
 
-  const amount = Number(expenseToDelete.amount);
-  setBalance(prev => prev + amount);
-  setExpenses(prev => prev - amount);
+  const price = Number(expenseToDelete.price);
+  setBalance(prev => prev + price);
+  setExpenses(prev => prev - price);
 
   const updatedList = expenseList.filter((_, i) => i != index);
   setExpenseList(updatedList);
@@ -104,15 +104,15 @@ const onDeleteExpense = (index) => {
 }
 
 const pieData = [
-  {name: "Food", value: expenseList.filter(e => e.category === "Food").reduce((acc, curr) => acc + Number(curr.amount), 0)},
-  {name: "Entertainment", value: expenseList.filter(e => e.category === "Entertainment").reduce((acc, curr) => acc + Number(curr.amount), 0)},
-  {name: "Travel", value: expenseList.filter(e => e.category === "Travel").reduce((acc, curr) => acc + Number(curr.amount), 0)},
+  {name: "Food", value: expenseList.filter(e => e.category === "Food").reduce((acc, curr) => acc + Number(curr.price), 0)},
+  {name: "Entertainment", value: expenseList.filter(e => e.category === "Entertainment").reduce((acc, curr) => acc + Number(curr.price), 0)},
+  {name: "Travel", value: expenseList.filter(e => e.category === "Travel").reduce((acc, curr) => acc + Number(curr.price), 0)},
 ];
 
 const barChartData = [
-  {name: "Entertainment", value: expenseList.filter(e => e.category === "Entertainment").reduce((acc, curr) => acc + Number(curr.amount), 0)},
-  {name: "Food", value: expenseList.filter(e => e.category === "Food").reduce((acc, curr) => acc + Number(curr.amount), 0)},
-  {name: "Travel", value: expenseList.filter(e => e.category === "Travel").reduce((acc, curr) => acc + Number(curr.amount), 0)},
+  {name: "Entertainment", value: expenseList.filter(e => e.category === "Entertainment").reduce((acc, curr) => acc + Number(curr.price), 0)},
+  {name: "Food", value: expenseList.filter(e => e.category === "Food").reduce((acc, curr) => acc + Number(curr.price), 0)},
+  {name: "Travel", value: expenseList.filter(e => e.category === "Travel").reduce((acc, curr) => acc + Number(curr.price), 0)},
 ];
 
 useEffect(() => {

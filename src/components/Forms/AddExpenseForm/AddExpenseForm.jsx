@@ -4,7 +4,7 @@ import "./AddExpenseForm.css";
 function AddExpenseForm ({ closeExpenseForm, onSubmitExpenseForm, defaultExpense }) {
     const [formData, setFormData] = useState(() => ({
         title: defaultExpense?.title || "",
-        amount: defaultExpense?.amount || "",
+        price: defaultExpense?.price || "",
         category: defaultExpense?.category || "Food",
         date: defaultExpense?.date || ""
     }));
@@ -26,7 +26,7 @@ function AddExpenseForm ({ closeExpenseForm, onSubmitExpenseForm, defaultExpense
 
         setFormData({
             title: "",
-            amount: "",
+            price: "",
             category: "",
             date: ""
         });
