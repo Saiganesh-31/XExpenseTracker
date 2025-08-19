@@ -148,11 +148,11 @@ useEffect(() => {
                     justifyContent: "flex-start", 
                     backgroundColor: "rgba(255, 255, 255, 1)",
                     borderRadius: "10px",
-                    padding: "1opx"
                     }}>
                 <p style={{
                   fontFamily: "ubuntu",
-                  fontSize: "1rem"
+                  fontSize: "1rem",
+                  padding: "10px"
                 }}>No Transactions!</p>
             </div>
         </div>  
