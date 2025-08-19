@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+body {
+  background-color: #3b3b3b;
+  padding: 10px;
+  font-family: "ubuntu", sans-serif;
+}
+
+div h1 {
+  color: white;
+}
+
+.cardsWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  padding: 48px;
+  background-color: #626262;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 32px;
+}
+
+.dashBoardLayout {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+
+.transactionSection {
+  width: 60%;
+}
+
+.chartSection {
+  width: 40%;
+}
+
+@media(max-width: 768px) {
+  .cardsWrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .dashBoardLayout {
+    flex-direction: column;
+  }
+
+  .transactionSection,
+  .chartSection {
+    width: 100%;
+  }
+
+  .transactionSection {
+    margin-bottom: 20px;
+  }
+}
+
